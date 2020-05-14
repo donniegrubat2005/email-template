@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+.card {
+  background-color: white;
+}
+.card-header {
+  background-color: white;
+}
+
+.card-title {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+.card-button {
+  margin-left: auto;
+  float: right;
+}
+.thead {
+  background-color: #859aa4;
+  color: black;
+}
+
+thead > tr > th {
+  cursor: pointer;
+}
+
+.thead-light thead {
+  background-color: #e3e9ef;
+}
+
+.mce-notification-inner {
+  display: none !important;
+}
+
+.ql-picker.ql-myDropdown .ql-picker-label:before {
+  content: "Dropdown"; /* never changes its content as this menu's label changes */
+}
+
+.ql-myDropdown .ql-picker-item:before {
+  content: attr(data-label);
+}
+.ql-myDropdown .ql-picker-item:before {
+  content: attr(data-value);
+}
+.ql-myDropdown {
+  width: 200px;
+}

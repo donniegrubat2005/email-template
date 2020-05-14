@@ -1,0 +1,10 @@
+.thead-light thead {
+    background-color:#E3E9EF;
+}
+/*  search box swapping to left code*/
+.dataTables_wrapper .myfilter .dataTables_filter {
+    float:left
+}
+.dataTables_wrapper .mylength .dataTables_length {
+    float:right
+}

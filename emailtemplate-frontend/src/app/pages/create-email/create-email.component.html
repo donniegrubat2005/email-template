@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <div class="card rounded-0">
+    <div class="card-header">
+      <div class="card-title">
+        Create Email
+        <div class="card-button">
+          <button
+            class="btn btn-default rounded-0"
+            (click)="returntoEmailList()"
+          >
+            <i class="fas fa-arrow-left"> Back</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="FirstName">Name</label>
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control rounded-0"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="body">Body</label>
+          <div id="toolbar">
+            <span class="ql-formats">
+              <select class="ql-font">
+                <option value="aref">Aref Ruqaa</option>
+                <option value="mirza">Mirza</option>
+                <option selected value="roboto">Roboto</option>
+              </select>
+              <select class="ql-align" [title]="'Aligment'">
+                <option selected></option>
+                <option value="center"></option>
+                <option value="right"></option>
+                <option value="justify"></option>
+              </select>
+            </span>
+            <span class="ql-formats">
+              <button class="ql-bold"></button>
+              <select class="ql-color" [title]="'Color'"> </select>
+
+              <select class="ql-background" [title]="'BackgroundColor'">
+              </select>
+            </span>
+            <div id="myDropdown">
+              <select class="ql-myDropdown" style="float: left;">
+                <option
+                  *ngFor="let emailVariable of emailVariables"
+                  value="{{ emailVariable.variable }}"
+                >
+                  {{ emailVariable.label }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <quill-editor
+            id="editor"
+            formControlName="body"
+            [modules]="modules"
+            [styles]="editorStyle"
+            (onSelectionChanged)="onSelectionChanged($event)"
+            (onContentChanged)="onContentChanged($event)"
+          >
+          </quill-editor>
+        </div>
+        <div class="form-group">
+          <label for="address">Variables</label>
+          <input
+            type="text"
+            formControlName="variables"
+            class="form-control rounded-0"
+          />
+        </div>
+        <button
+          class="btn btn-success rounded-0"
+          [disabled]="!emailForm.valid"
+          type="submit"
+        >
+          Create
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

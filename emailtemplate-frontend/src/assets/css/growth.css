@@ -1,0 +1,113 @@
+body{
+    color:#335564;
+    overflow-x: hidden;
+    padding: 0;
+    margin:0;
+}
+
+
+.side-nav .logo-sn a {
+    background-color: white;
+	padding: 16px 0;
+}
+
+.navbar {
+    background-color:white;
+   
+    position: fixed;
+ 
+    z-index: 1000;
+   
+}
+
+.input-group-append .btn, .input-group-prepend .btn {
+    min-width: 0;
+}
+
+.form-inline .input-group {
+    margin-bottom: 0rem; 
+}
+
+.side-nav {
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
+    box-shadow: none; 
+}
+.ms-content-wrapper {
+    padding: 30px;
+    padding-top: 35px;
+}
+.btn {
+    
+    margin-top: 0px; 
+}
+.btn-rounded {
+    border-radius: 30px;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 32px;
+    padding-left: 5px;
+}
+.ms-panel-body, .ms-panel-footer {
+  
+    padding: 3.5rem;
+}
+.table-responsive .form-control{
+ 
+    margin: 0.2rem;
+}
+/*mobile view */
+
+.logo-sn a img {
+    max-width: 202px;
+}
+.dataTables_wrapper .mylength .dataTables_length {
+    float: left;
+}
+/* Small devices (landscape phones, 576px and up) */
+
+    @media (min-width: 576px) { 
+        .dataTables_wrapper .mylength .dataTables_length {
+            float: right;
+        }
+    }
+    
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+        .logo-sn a img {
+            max-width: 158px;
+        }
+        
+    
+    }
+    
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+ 
+    }
+    
+    
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+
+    }
+    /* date range picker */
+  
+  
+    
+    .daterangepicker .drp-calendar.left,.daterangepicker .drp-calendar.right {
+        position: unset;
+        width: auto;
+        height: auto;
+        border-style: none;
+        top: auto;
+        margin-top: auto;
+        cursor: pointer;
+        border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
+        left:0px;
+        padding: 8px 0 8px 8px;
+    }
+.TextWrap{
+    display: flex;  
+    flex-wrap: nowrap;
+}

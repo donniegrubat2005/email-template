@@ -1,0 +1,21 @@
+span.multiselect-native-select {
+    position: relative;
+    width:100%;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+    width:100%;
+}
+.btn-group>.btn:first-child {
+    margin-left: 0;
+    width:100%;
+}
+.dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    width:100%;
+}

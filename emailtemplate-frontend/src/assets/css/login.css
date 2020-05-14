@@ -1,0 +1,158 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+/*.login-page .section-second .company-title {*/
+.company-title {
+    letter-spacing: 7px;
+    color: #43425d;
+    font-size: 28px;
+}
+.welcome-note {
+    margin: 10px 0 0;
+    font: Normal 14px/10px Lato;
+    line-height: 1.2em;
+}
+
+.ms-auth-form form{
+    margin: 1% 0px 0px 23%;
+}
+.login-bg {
+    position: relative;
+    height: 100%;
+    background-image: url(../img/login-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* MOBILE VIEW */
+.ms-auth-col:first-child {
+display: none;
+}
+.ms-auth-form form {
+    margin: -8% 0px 0px 10%;
+}
+
+.ms-auth-form form {
+    width: 80%;
+}
+
+.section-first .title {
+    padding: 83% 0 0 10%;
+    color: #fff;
+    font: 700 Italic 20px Lato;
+    width: 90%;
+}
+.section-first .sub-title {
+    color: #fff;
+    padding: 25px 0 0 10%;
+    font: Normal 18px/20px Lato;
+    width: 90%;
+}
+.login-bg {
+background: none;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 1024px){
+.ms-auth-bg{
+display:block;
+}
+.ms-auth-col:first-child {
+display: none;
+}
+}
+@media (min-width: 576px) { 
+ .ms-auth-col:first-child {
+display: block;
+width: 42%;
+}
+    .ms-auth-form form {
+        margin: 2% 0px 0px 0%;
+    }
+    
+    .ms-auth-form form {
+        width: 100%;
+    }
+    .login-bg {
+        position: relative;
+        height: 100%;
+        background-image: url(../img/login-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+ .ms-auth-col:first-child {
+display: block;
+}
+    .ms-auth-form form {
+        margin: 2% 0px 0px 0%;
+    }
+    .ms-auth-form form {
+        width: 75%;
+    }
+
+.section-first .title {
+padding: 67% 0 0 5%;
+color: #fff;
+font: 700 Italic 22px Lato;
+width: 90%;
+}
+.section-first .sub-title {
+color: #fff;
+padding: 25px 0 0 5%;
+font: Normal 18px/20px Lato;
+width: 73%;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .ms-auth-form form {
+        margin: 2% 0px 0px 0%;
+    }
+    .ms-auth-form form {
+        width: 90%;
+    }
+.section-first .title {
+padding: 49% 0 0 5%;
+color: #fff;
+font: 700 Italic 38px Lato;
+width: 75%;
+}
+.section-first .sub-title {
+color: #fff;
+padding: 25px 0 0 5%;
+font: Normal 18px/22px Lato;
+width: 60%;
+}
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .ms-auth-form form {
+        margin: 2% 0px 0px 0%;
+    }
+    .ms-auth-form form {
+        width: 70%;
+    }
+.section-first .title {
+padding: 49% 0 0 12%;
+color: #fff;
+font: 700 Italic 38px Lato;
+width: 60%;
+}
+.section-first .sub-title {
+color: #fff;
+padding: 25px 0 0 12%;
+font: Normal 18px/22px Lato;
+width: 60%;
+}
+}
